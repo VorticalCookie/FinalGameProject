@@ -123,6 +123,24 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &16410474 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2387812677414102897, guid: 50f9e81d3730b1a4ca5b7ef162eee220, type: 3}
+  m_PrefabInstance: {fileID: 4180447699639431687}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &16410481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16410474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a44de6ec69726043b7e26b939c812b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
 --- !u!1 &56999558
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,6 +291,7 @@ GameObject:
   - component: {fileID: 391809495}
   - component: {fileID: 391809494}
   - component: {fileID: 391809493}
+  - component: {fileID: 391809496}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -355,6 +374,19 @@ Transform:
   - {fileID: 56999559}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &391809496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391809492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a44de6ec69726043b7e26b939c812b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
 --- !u!1 &646278105
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,6 +829,7 @@ GameObject:
   - component: {fileID: 1127976991}
   - component: {fileID: 1127976990}
   - component: {fileID: 1127976989}
+  - component: {fileID: 1127976993}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -890,6 +923,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1127976993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127976988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a44de6ec69726043b7e26b939c812b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
 --- !u!1 &1141822306
 GameObject:
   m_ObjectHideFlags: 0
@@ -965,7 +1011,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 7
   m_Sprite: {fileID: 21300000, guid: 079f2d5cc6065b448a143f71c0ee0762, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2187,7 +2233,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 7
   m_Sprite: {fileID: 21300000, guid: 079f2d5cc6065b448a143f71c0ee0762, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2271,7 +2317,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 7
   m_Sprite: {fileID: 21300000, guid: 079f2d5cc6065b448a143f71c0ee0762, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2375,6 +2421,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1770622168487798322, guid: 50f9e81d3730b1a4ca5b7ef162eee220, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.29
+      objectReference: {fileID: 0}
     - target: {fileID: 2387812677414102897, guid: 50f9e81d3730b1a4ca5b7ef162eee220, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2422,7 +2472,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2387812677414102897, guid: 50f9e81d3730b1a4ca5b7ef162eee220, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 16410481}
   m_SourcePrefab: {fileID: 100100000, guid: 50f9e81d3730b1a4ca5b7ef162eee220, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
