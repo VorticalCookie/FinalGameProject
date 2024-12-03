@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 10f;  // Force applied to ascend
     public float maxJumpSpeed = 7f; // Max upward velocity
     public float gravity = 10f;    // Custom gravity force
+    public int lives;
+    public int totalGold;
 
     private Rigidbody rb;
 
