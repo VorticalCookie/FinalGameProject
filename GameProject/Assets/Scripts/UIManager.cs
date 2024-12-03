@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class UIManager : MonoBehaviour
     public PlayerMovement player;
     public TMP_Text goldText;
     public TMP_Text livesText;
+    
 
     void Start()
     {
@@ -21,9 +23,17 @@ public class UIManager : MonoBehaviour
         goldText.text = "Gold: " + player.totalGold;
         livesText.text = "Lives: " + player.lives;
     }
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+    public void SwitchScene(int sceneIndex)
+    {
+        SceneManager.LoadScene(sceneIndex);
+    }
 
-   
 
-   
+
+
 }
 

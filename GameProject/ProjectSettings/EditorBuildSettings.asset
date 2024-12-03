@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main menu.unity
+    guid: a1bcabf735229f542a1283efd5b6602d
+  - enabled: 1
+    path: Assets/Scenes/AlejandroScene.unity
+    guid: 23541890810c7734383aa4e52ccafd8e
   m_configObjects: {}
