@@ -2,16 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+  * Author: [Espinoza, Marco]
+  * Last Updated: [12/5/2024]
+  * Date Created: [12/5/2024]
+  * [Handles the spawning of objects]
+  */
+
 public class Spawner : MonoBehaviour
 {
 
-    /*
-     * Author: [Espinoza, Marco]
-     * Last Updated: [12/5/2024]
-     * Date Created: [12/5/2024]
-     * [Handles the spawning of objects]
-     */
-
+ 
     //The variables needed to spawn objects
     public GameObject objectPrefab;
     public float timeBetweenSpawns;

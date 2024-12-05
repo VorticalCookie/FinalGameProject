@@ -1,13 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+/*
+    * Author: [Espinoza, Marco]
+    * Last Updated: [12/3/2024]
+    * Date Created: [12/3/2024]
+    * [Handles the parallax effect]
+    */
 
 public class Scrolling : MonoBehaviour
 {
-    private float length, startPos;
-    public GameObject cam;
-    public float parallaxEffect;
-
+    private float length, startPos;// The length of the sprite and its starting position
+    public GameObject cam; // Reference to the camera object to track its movement
+    public float parallaxEffect; // The parallax effect relative to the camera
     private void Start()
     {
         startPos = transform.position.x;

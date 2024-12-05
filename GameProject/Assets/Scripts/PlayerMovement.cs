@@ -55,4 +55,13 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Gold"))
+        {
+            totalGold += 1;
+            Destroy(other.gameObject); // Destroy the gold coin
+        }
+    }
 }
