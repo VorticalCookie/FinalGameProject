@@ -4,10 +4,10 @@ using UnityEngine;
 
 
 /*
- * Author: [Espinoza, Marco]
- * Last Updated: [12/5/2024]
+ * Author: [Espinoza, Marco and Barravecchia, Mason]
+ * Last Updated: [12/7/2024]
  * Date Created: [12/3/2024]
- * [Handles the player movement/jump force]
+ * [Handles the player movement/jump force, and Live Count.]
  */
 
 public class PlayerMovement : MonoBehaviour
@@ -63,5 +63,27 @@ public class PlayerMovement : MonoBehaviour
             totalGold += 1;
             Destroy(other.gameObject); // Destroy the gold coin
         }
+        ///Bullet Collision and Losing life upon impact.
+        else if (other.gameObject.CompareTag("Enemy"))
+        {
+            lives -= 1; ///take off a life
+            Destroy(other.gameObject);
+            CheckGameOver();
+        }
     }
+    /// <summary>
+    /// this function serves as a placeholder to remind me to impliment the game over screen transition.
+    /// </summary>
+    private void CheckGameOver()
+    {
+        if (lives <= 0)
+        {
+            Debug.Log("Game Over!");
+            //make game over screen
+        }
+    }
+
+
+
+
 }
