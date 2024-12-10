@@ -34,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Movement();
+        Debug.Log("Player X Position: " + transform.position.x);
     }
 
     private void Movement()
@@ -64,4 +65,6 @@ public class PlayerMovement : MonoBehaviour
             Destroy(other.gameObject); // Destroy the gold coin
         }
     }
+
+
 }
