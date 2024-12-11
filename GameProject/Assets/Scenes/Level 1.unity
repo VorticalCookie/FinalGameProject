@@ -3116,6 +3116,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5239655989024158202, guid: 50f9e81d3730b1a4ca5b7ef162eee220, type: 3}
+      propertyPath: gravity
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239655989024158202, guid: 50f9e81d3730b1a4ca5b7ef162eee220, type: 3}
       propertyPath: maxHeight
       value: 7
       objectReference: {fileID: 0}
