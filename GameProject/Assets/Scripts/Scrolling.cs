@@ -6,6 +6,8 @@ using UnityEngine;
     * Last Updated: [12/3/2024]
     * Date Created: [12/3/2024]
     * [Handles the parallax effect]
+    * [Code Credit to: Dani on YT]
+    * [https://www.youtube.com/watch?v=zit45k6CUMk&t=355s] 
     */
 
 public class Scrolling : MonoBehaviour
