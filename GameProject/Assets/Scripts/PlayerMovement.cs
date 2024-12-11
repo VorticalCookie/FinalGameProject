@@ -19,6 +19,10 @@ public class PlayerMovement : MonoBehaviour
     public float maxHeight = 9f; // Maximum jump height
     public int lives;
     public int totalGold;
+    public GameObject background;
+    public GameObject background1;
+    public GameObject background2;
+    public GameObject background3;
 
     private Rigidbody rb;
     private float startY; // Store the initial Y position
@@ -28,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         startY = transform.position.y; // Initialize startY
+        StartCoroutine(Level());
     }
 
     // Update is called once per frame
@@ -82,6 +87,21 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("Game Over!");
             //make game over screen
         }
+    }
+    
+    public IEnumerator Level()
+    {
+        yield return new WaitForSeconds(30);
+        background.SetActive(false);
+        background1.SetActive(true);
+        yield return new WaitForSeconds(45);
+        background1.SetActive(false);
+        background2.SetActive(true);
+        yield return new WaitForSeconds(60);
+        background2.SetActive(false);
+        background3.SetActive(true);
+
+
     }
 
 
