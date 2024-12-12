@@ -30,7 +30,7 @@ public class Spawner : MonoBehaviour
     public void SpawnObject()
     {
 
-        //invokes games objects
+        //Invokes the object prefabs
         Instantiate(objectPrefab, transform.position, objectPrefab.transform.rotation);
     
 

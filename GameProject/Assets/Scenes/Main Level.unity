@@ -574,7 +574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectPrefab: {fileID: 4618719533501021532, guid: 254b5e65d5ab2b2489f3624b01e73ae5, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 5
   startDelay: 75
 --- !u!4 &103540960
 Transform:
