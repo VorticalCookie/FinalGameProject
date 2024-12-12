@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Main menu.unity
     guid: a1bcabf735229f542a1283efd5b6602d
   - enabled: 1
-    path: Assets/Scenes/AlejandroScene.unity
-    guid: 23541890810c7734383aa4e52ccafd8e
+    path: Assets/Scenes/Main Level.unity
+    guid: f899d935efef83c48a9164859a511897
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: c42c890868709aa4381ceb473179ce39
   m_configObjects: {}

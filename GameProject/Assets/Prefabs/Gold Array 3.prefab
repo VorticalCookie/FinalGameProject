@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4324548409366531715}
+  - component: {fileID: 7052260824341095916}
   m_Layer: 0
   m_Name: Gold Array 3
   m_TagString: Untagged
@@ -36,6 +37,18 @@ Transform:
   - {fileID: 7413601183210975759}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7052260824341095916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620812710788421131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ace9875347349ea439a9913613ab44bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1113045100408274829
 PrefabInstance:
   m_ObjectHideFlags: 0

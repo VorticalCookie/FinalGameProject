@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 /*
  * Author: [Espinoza, Marco and Barravecchia, Mason]
@@ -70,11 +70,18 @@ public class PlayerMovement : MonoBehaviour
             Destroy(other.gameObject); // Destroy the gold coin
         }
         ///Bullet Collision and Losing life upon impact.
-        else if (other.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.CompareTag("Enemy"))
         {
             lives -= 1; ///take off a life
             Destroy(other.gameObject);
             CheckGameOver();
+        }
+
+        if (other.gameObject.CompareTag("Health"))
+        {
+            lives += 1; ///add a life
+            Destroy(other.gameObject);
+            
         }
     }
     /// <summary>
@@ -85,7 +92,7 @@ public class PlayerMovement : MonoBehaviour
         if (lives <= 0)
         {
             Debug.Log("Game Over!");
-            //make game over screen
+            SceneManager.LoadScene(2);
         }
     }
     
@@ -101,7 +108,10 @@ public class PlayerMovement : MonoBehaviour
         background2.SetActive(false);
         background3.SetActive(true);
 
-
+        //Level 1 Starts at 0:00
+        //Level 2 Starts at 0:30
+        //Level 3 Starts at 1:15
+        //Level 4 Starts at 2:15
     }
 
 
