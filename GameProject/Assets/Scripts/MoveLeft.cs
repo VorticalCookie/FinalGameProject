@@ -6,7 +6,7 @@ using UnityEngine;
   * Author: [Espinoza, Marco]
   * Last Updated: [12/5/2024]
   * Date Created: [12/5/2024]
-  * [Basic script that moves the scene right]
+  * [Basic script that moves the an object to the left]
   */
 
 public class MoveLeft : MonoBehaviour
