@@ -96,6 +96,10 @@ public class PlayerMovement : MonoBehaviour
         }
     }
     
+    /// <summary>
+    /// This controls how long the background/level lasts in game.
+    /// </summary>
+    /// <returns></returns>
     public IEnumerator Level()
     {
         yield return new WaitForSeconds(30);
