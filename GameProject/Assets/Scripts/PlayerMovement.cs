@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 /*
- * Author: [Espinoza, Marco and Barravecchia, Mason]
- * Last Updated: [12/7/2024]
+ * Author: [Espinoza, Marco and Barravecchia, Mason and Gonzales,Alejandro]
+ * Last Updated: [12/11/2024]
  * Date Created: [12/3/2024]
  * [Handles the player movement/jump force, and Live Count.]
  */
